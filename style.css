@@ -1,0 +1,187 @@
+body{
+    background: cornsilk;
+}    
+#face{
+    height: 200px;
+    width: 200px;
+    background: brown;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: gray;
+    margin-top: 18px;
+    border-radius: 50px;
+}
+
+#center{
+    height: 200px;
+    width: 200px;
+    background: brown;
+    margin: auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 25px;
+}
+
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#lleg,#rleg{
+    height: 100px;
+    width: 25px;
+    background: brown;
+    margin-top: 30px;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 150px;
+    margin-top: -10px;
+}    
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: gray;
+    border-radius: 50%;
+}
+
+#eye{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 125px;
+}
+
+#main{
+    height: 700px;
+    width: 500px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#main:hover #larm{
+    animation: changelarm 1s 2;
+}
+
+@keyframes changelarm{
+    0%{
+        transform:rotate(0deg);
+        transform-origin: bottom center;
+    }
+
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background-color: aqua;
+    }
+}
+
+#main:hover #rarm{
+    animation: changerarm 1s 2;
+}
+
+@keyframes changerarm{
+    0%{
+        transform:rotate(0deg);
+        transform-origin: bottom center;
+    }
+
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background-color: aqua;
+    }
+        
+}
+#main:hover #face{
+    animation:changeface 1s 2;
+}
+
+@keyframes changeface{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+        background-color: aqua;
+    }
+}
+    #main:hover #lleg{
+        animation: changelleg 1s 2;
+    } 
+
+    @keyframes changelleg{
+        0%{
+            transform:rotate(0deg);
+            transform-origin: bottom center;
+        }
+    
+        100%{
+            transform: rotate(90deg);
+            transform-origin: top center;
+            background-color: aqua;
+        }
+    }
+    
+    #main:hover #rleg{
+        animation: changerleg 1s 2;
+    }
+    
+    @keyframes changerleg{
+        0%{
+            transform:rotate(0deg);
+            transform-origin: bottom center;
+        }
+    
+        100%{
+            transform: rotate(-90deg);
+            transform-origin: top center;
+            background-color: aqua;
+        }
+    }    
+
+    #main:hover #center{
+        animation: changecenter 1s 2;
+    }
+    
+@keyframes changecenter{
+    0%{
+        background-image: url(./22.jfif) ;
+        background-size: cover;
+    }
+    25%{
+        background-image: url(./22.jfif);
+        background-size: cove
+    }
+    50%{
+        background-image: url(./22.jfif);
+        background-size: cover; 
+    }
+    75%{
+        background-image: url(./22.jfif);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(./22.jfif);
+        background-size: cover;
+    }
+}
+    
